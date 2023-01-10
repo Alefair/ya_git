@@ -1,6 +1,6 @@
 # Прогнозирование оттока клиентов в "βeta-Банк"
 
-![logo](https://raw.githubusercontent.com/Alefair/ya_git/master/beta_logo.PNG)
+![logo](https://raw.githubusercontent.com/Alefair/ya_git/master/Beta_Bank/beta_logo.PNG)
 
 ```
 βeta-Банк просит проанализировать данные и спрогнозировать, уйдет ли клиент из банка или нет.
