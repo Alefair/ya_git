@@ -1,3 +1,3 @@
-# Проекты ya. Практикум
+# Проекты YA.Практикум
 
 [Прогнозирование оттока клиентов в "βeta-Банк"](https://github.com/Alefair/ya_git/tree/master/Beta_Bank)
