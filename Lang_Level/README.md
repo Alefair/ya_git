@@ -1,6 +1,6 @@
 # Сервис определения уровня английского языка по файлу субтитра
 
-![logo](https://raw.githubusercontent.com/Alefair/ya_git/master/Beta_Bank/beta_logo.PNG)
+![logo](https://raw.githubusercontent.com/Alefair/ya_git/master/Lang_Level/langLogo.png)
 
 ```
 **Проект:**
