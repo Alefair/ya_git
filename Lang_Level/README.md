@@ -50,3 +50,34 @@ import pandas as pd
 df_train = TextOperations().load_data_from_directory('./subtitles/movies_labels.xlsx', './subtitles')
 df_train
   ```
+![table](https://raw.githubusercontent.com/Alefair/ya_git/master/Lang_Level/src/table.png)
+
+```python
+# Обучаем
+tc = TextClassification(df_train)
+tc.train_model()
+```
+![accuracy](https://raw.githubusercontent.com/Alefair/ya_git/master/Lang_Level/src/accuracy.png)
+
+```python
+# сохраним модель
+tc.save_model('/content/model.pkl')
+```
+
+**Используем**
+  ```python
+# Указываем путь к модели
+model = TextOperations('./models/model.pkl')
+
+# Указываем путь к субтитру для определения уровня английского языка
+df = model.load_data('/home/alefair/jupyter/work/app/subtitles/Frozen.2013.WEB-DL.DSNP.srt')
+text = df.at[0,"text"]
+
+# Предсказываем
+level, dt = model.predict_level(text)
+
+print(level)
+display(dt)
+```
+
+![predict](https://raw.githubusercontent.com/Alefair/ya_git/master/Lang_Level/src/predict.png)
