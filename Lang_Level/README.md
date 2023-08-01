@@ -20,3 +20,33 @@
 развернуть приложение для демонстрации его работы, при условии возможности
 использования пакета Streamlit.
 ```
+
+******************
+
+Тестовый стенд расположен [здесь](https://lang.alefair.com)
+
+### Способ использования:
+
+- Скопировать к себе в проект папки:
+  - model
+  - subtitles
+
+- И файл lang_settings.py
+
+- Создаем тетрадку и пишем код:
+
+**Импортируем библиотеки**
+```python
+from lang_settings import TextOperations, TextClassification, Text2Vec
+import os
+import pandas as pd
+```
+
+**Для обучения**
+  ```python
+# Указываем путь к файлу размеченных Фильм = level (файл movies_labels.xlsx)
+# Указываем путь к папке с субтитрами
+
+df_train = TextOperations().load_data_from_directory('./subtitles/movies_labels.xlsx', './subtitles')
+df_train
+  ```
